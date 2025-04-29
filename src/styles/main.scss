@@ -1,3 +1,37 @@
-body {
-    background-color: blue;
+@use "header";
+@use "hero";
+@use "variaveis";
+@use "movies";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cormorant Garamond", sans-serif;
 }
+
+body {
+    background-color: variaveis.$bgColor;
+}
+
+.title {
+    color: variaveis.$corTitulos;
+    font-size: 44px;
+}
+
+.title--small {
+    color: variaveis.$corTitulos;
+    font-size: 24px;
+}
+
+.text {
+    color: variaveis.$corTextoPrincipal;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.text--small {
+    color: variaveis.$corTextoPrincipal;
+    font-size: 18px;
+}
+

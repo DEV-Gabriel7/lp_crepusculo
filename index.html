@@ -1,14 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A saga Crepúsculo</title>
     <link rel="stylesheet" href="dist/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
-        <img src="src/images/profile_crep.png" alt="Imagem do crepúsculo">
+        <div class="header__container">
+            <h1>
+                <img src="dist/images/profile_crep.png" alt="Imagem do crepúsculo" />
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#saga">A Saga</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#trailers">Trailers</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#elenco">Elenco</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#escritora">Escritora</a>
+                </li>
+            </ul>
+        </div>
     </header>
+    <section class="hero" id="sobre">
+        <div class="hero__content">
+            <h1 class="title">Entre Sombras e Eternidade</h1>
+            <p class="text">
+                Entre olhares intensos e escolhas impossíveis, a saga <strong><i>Crepúsculo</i></strong> nos leva a um
+                universo onde o amor desafia a morte e a eternidade é apenas o começo. Em cinco filmes marcantes,
+                acompanhamos a jornada de Bella, Edward e Jacob, em meio a paixões proibidas, lutas sobrenaturais e a
+                eterna dúvida entre coração e destino.
+            </p>
+        </div>
+    </section>
+
+    <section class="movies" id="saga">
+        <div class="movies__content">
+            <h1 class="title">A Eternidade de um Amor Proibido</h1>
+            <p class="text">A saga Crepúsculo acompanha a intensa história de amor entre a humana Bella Swan e o vampiro Edward Cullen. Ao longo dos cinco filmes somos levados a um universo onde paixão, perigo e escolhas impossíveis se entrelaçam. Entre romances proibidos, conflitos sobrenaturais e lutas pela sobrevivência, a trama cresce em emoção, amadurecendo os personagens e testando seus limites. Mais do que uma história de vampiros e lobisomens, Crepúsculo fala sobre amor incondicional, sacrifício e a coragem de desafiar o destino.</p>
+            <div class="movies__content__items">
+                <div class="movies__content__items__item">
+                    <img src="dist/images/crepusculo.png" alt="">
+                    <h3 class="title--small">CREPÚSCULO</h3>
+                    <p class="text--small">Bella Swan conhece Edward Cullen e entra no misterioso mundo dos vampiros.</p>
+                </div>
+                <div class="movies__content__items__item">
+                    <h3 class="title--small">LUA NOVA</h3>
+                    <p class="text--small">Após o afastamento de Edward, Bella encontra apoio em Jacob Black e descobre o mundo dos lobisomens.</p>
+                    <img src="dist/images/lua_nova.png" alt="">
+                </div>
+                <div class="movies__content__items__item">
+                    <img src="dist/images/Eclipse.png" alt="">
+                    <h3 class="title--small">ECLIPSE</h3>
+                    <p class="text--small">	Bella precisa escolher entre o amor de Edward e a amizade de Jacob, enquanto uma ameaça se aproxima.</p>
+                </div>
+                <div class="movies__content__items__item">
+                    <h3 class="title--small">AMANHECER - PT 1</h3>
+                    <p class="text--small">O casamento de Bella e Edward traz uma gravidez inesperada e perigos sobrenaturais.</p>
+                    <img src="dist/images/amanhecer_1.png" alt="">
+                    
+                </div>
+                <div class="movies__content__items__item">
+                    <img src="dist/images/amanhecer_2.png" alt="">
+                    <h3 class="title--small">AMANHECER - PT 2</h3>
+                    <p class="text--small">O nascimento de Renesmee une vampiros e lobisomens contra a ameaça dos Volturi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
