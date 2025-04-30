@@ -19,3 +19,12 @@
 .button-hero a {
   text-decoration: none;
 }
+
+.button-trailers {
+  font-size: 22px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  color: #f8f8f8;
+  background: transparent;
+  border: none;
+}

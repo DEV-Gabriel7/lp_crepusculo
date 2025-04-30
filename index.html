@@ -34,6 +34,7 @@
             </ul>
         </div>
     </header>
+
     <section class="hero" id="sobre">
         <div class="hero__content">
             <h1 class="title">Entre Sombras e Eternidade</h1>
@@ -52,7 +53,12 @@
     <section class="movies" id="saga">
         <div class="movies__content">
             <h1 class="title">A Eternidade de um Amor Proibido</h1>
-            <p class="text">A saga Crepúsculo acompanha a intensa história de amor entre a humana Bella Swan e o vampiro Edward Cullen. Ao longo dos cinco filmes somos levados a um universo onde paixão, perigo e escolhas impossíveis se entrelaçam. Entre romances proibidos, conflitos sobrenaturais e lutas pela sobrevivência, a trama cresce em emoção, amadurecendo os personagens e testando seus limites. Mais do que uma históriade vampiros e lobisomens, Crepúsculo fala sobre amor incondicional, sacrifício e a coragem de desafiar o destino.</p>
+            <p class="text">A saga Crepúsculo acompanha a intensa história de amor entre a humana Bella Swan e o vampiro
+                Edward Cullen. Ao longo dos cinco filmes somos levados a um universo onde paixão, perigo e escolhas
+                impossíveis se entrelaçam. Entre romances proibidos, conflitos sobrenaturais e lutas pela sobrevivência,
+                a trama cresce em emoção, amadurecendo os personagens e testando seus limites. Mais do que uma
+                históriade vampiros e lobisomens, Crepúsculo fala sobre amor incondicional, sacrifício e a coragem de
+                desafiar o destino.</p>
             <div class="movies__content__items">
                 <div class="movies__content__items__item">
                     <img src="dist/images/movies/crepusculo.png" alt="">
@@ -83,44 +89,121 @@
                     <img src="dist/images/movies/amanhecer_2.png" alt="">
                     <h3 class="title--small">AMANHECER - PT 2</h3>
                     <p class="text--small">O nascimento de Renesmee une vampiros e lobisomens contra a ameaça dos
-                    Volturi.</p>
+                        Volturi.</p>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="watch">
         <div class="watch__content">
             <h1>Onde assistir?</h1>
-            <p class="text">Reviva cada emoção, romance e mistério da saga Crepúsculo! Todos os filmes estão disponíveis no Amazon Prime Video, Globoplay e Telecine — ou, se preferir, você pode alugá-los no YouTube e Google Play Filmes. Escolha sua plataforma favorita e embarque novamente nessa história que marcou uma geração.
+            <p class="text">
+                Romance proibido, mistério e escolhas que marcam para sempre. Reviva cada emoção, romance e mistério da
+                saga! Todos os filmes estão disponíveis no Amazon Prime Video, Globoplay e Telecine Escolha sua
+                plataforma favorita e embarque novamente nessa história que marcou uma geração.
             </p>
             <ul class="watch__content__items">
                 <li class="watch__content__items__item">
-                    <img src="dist/images/onde_assistir/logo_amazon.png" alt="Logo da Amazon"/>
+                    <img src="dist/images/onde_assistir/logo_amazon.png" alt="Logo da Amazon" />
                     <button class="button-watch">
                         <a href="https://www.primevideo.com/" target="_blank">Amazon Prime Video</a>
                     </button>
                 </li>
                 <li class="watch__content__items__item">
-                    <img src="dist/images/onde_assistir/logo_netflix.png" alt="Logo da Netflix"/>
-                    <button>
+                    <img src="dist/images/onde_assistir/logo_netflix.png" alt="Logo da Netflix" />
+                    <button class="button-watch">
                         <a href="https://www.netflix.com/" target="_blank">Netflix</a>
                     </button>
                 </li>
                 <li class="watch__content__items__item">
-                    <img src="dist/images/onde_assistir/logo_globoplay.png" alt="Logo da Globoplay"/>
-                    <button>
+                    <img src="dist/images/onde_assistir/logo_globoplay.png" alt="Logo da Globoplay" />
+                    <button class="button-watch">
                         <a href="https://globoplay.globo.com/" target="_blank">Globoplay</a>
                     </button>
                 </li>
                 <li class="watch__content__items__item">
                     <img src="dist/images/onde_assistir/logo_telecine.png" alt="">
-                    <button>
+                    <button class="button-watch">
                         <a href="https://www.telecineplay.com.br/" target="_blank">Telecine</a>
                     </button>
                 </li>
             </ul>
         </div>
     </section>
+
+    <section class="trailers" id="#trailers">
+        <div class="trailers__content">
+            <h1 class="title">Trailers Oficiais</h1>
+            <p class="text">Antes de mergulhar na história, que tal sentir o clima da saga? Assista aos trailers
+                oficiais de Crepúsculo e
+                reviva os momentos mais marcantes de cada filme — emoção, suspense e romance à flor da pele.</p>
+            <nav class="trailers__tabs">
+                <button class="trailers__tabs__button button-trailers trailers__tabs__button--is-active"
+                    data-tab-button="crepusculo">
+                    Crepusculo(2008)
+                </button>
+                <button class="trailers__tabs__button button-trailers" data-tab-button="lua_nova">
+                    Lua Nova(2009)
+                </button>
+                <button class="trailers__tabs__button button-trailers" data-tab-button="eclipse">
+                    Eclipse(2010)
+                </button>
+                <button class="trailers__tabs__button button-trailers" data-tab-button="amanhecer_pt1">
+                    Amanhecer pt 1
+                </button>
+                <button class="trailers__tabs__button button-trailers" data-tab-button="amanhecer_pt2">
+                    Amanhecer pt 2
+                </button>
+            </nav>
+        </div>
+        <ul data-tab-id="crepusculo" class="trailers__list trailers__list--is-active">
+            <li class="trailer">
+                <div class="trailer__thumb"
+                    onclick="this.innerHTML = `<iframe src='https://geo.dailymotion.com/player.html?video=x2ku8u4' frameborder='0' allowfullscreen style='width:100%; height:100%; border-radius: 15px;'></iframe>`">
+                    <button class="trailer__play-btn">▶</button>
+                </div>
+            </li>
+        </ul>
+        
+        <ul data-tab-id="lua_nova" class="trailers__list">
+            <li class="trailer">
+                <div class="trailer__thumb"
+                    onclick="this.innerHTML = `<iframe src='https://geo.dailymotion.com/player.html?video=xhw97j' frameborder='0' allowfullscreen style='width:100%; height:100%; border-radius: 15px;'></iframe>`">
+                    <button class="trailer__play-btn">▶</button>
+                </div>
+            </li>
+        </ul>
+        
+        <ul data-tab-id="eclipse" class="trailers__list">
+            <li class="trailer">
+                <div class="trailer__thumb"
+                    onclick="this.innerHTML = `<iframe src='https://geo.dailymotion.com/player.html?video=x88nyek' frameborder='0' allowfullscreen style='width:100%; height:100%; border-radius: 15px;'></iframe>`">
+                    <button class="trailer__play-btn">▶</button>
+                </div>
+            </li>
+        </ul>
+        
+        <ul data-tab-id="amanhecer_pt1" class="trailers__list">
+            <li class="trailer">
+                <div class="trailer__thumb"
+                    onclick="this.innerHTML = `<iframe src='https://geo.dailymotion.com/player.html?video=x88o1zz' frameborder='0' allowfullscreen style='width:100%; height:100%; border-radius: 15px;'></iframe>`">
+                    <button class="trailer__play-btn">▶</button>
+                </div>
+            </li>
+        </ul>
+        
+        <ul data-tab-id="amanhecer_pt2" class="trailers__list">
+            <li class="trailer">
+                <div class="trailer__thumb"
+                    onclick="this.innerHTML = `<iframe src='https://geo.dailymotion.com/player.html?video=x88niij' frameborder='0' allowfullscreen style='width:100%; height:100%; border-radius: 15px;'></iframe>`">
+                    <button class="trailer__play-btn">▶</button>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+    <script src="dist/js/main.js"></script>
 </body>
 
 </html>

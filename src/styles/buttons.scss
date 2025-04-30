@@ -1,3 +1,5 @@
+@use "variaveis";
+
 .button-watch {
     display: flex;
     justify-content: center;
@@ -19,4 +21,13 @@
     a {
         text-decoration: none;
     }
+}
+
+.button-trailers {
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 16px 32px;
+    color: variaveis.$corTextoPrincipal;
+    background: transparent;
+    border: none;
 }
