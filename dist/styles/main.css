@@ -34,12 +34,12 @@
   align-items: center;
   border-radius: 12px;
   margin-top: 18px;
-  height: 90px;
-  width: 80px;
+  height: 80px;
+  width: 60px;
 }
 
 .hero {
-  background-image: url(../images/hero_sobre_desktop.png);
+  background-image: url(../images/heros/hero_sobre_desktop.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,44 +48,110 @@
 }
 .hero__content {
   color: #f8f8f8;
-  padding-top: 30vh;
+  padding-top: 25vh;
   max-width: 800px;
   width: 100%;
   text-align: center;
   padding-left: 75px;
   max-height: 60vh;
 }
+.hero__content h1 {
+  margin-bottom: 38px;
+}
+.hero__content p {
+  margin-bottom: 48px;
+}
 
 .movies {
   width: 100%;
-  height: 100vh;
+  height: 976px;
 }
 .movies__content {
-  width: 100%;
   text-align: center;
-  padding: 90px 180px;
+  padding: 60px;
 }
 .movies__content h1 {
   padding-bottom: 48px;
 }
+.movies__content > p {
+  padding: 0 100px;
+}
 .movies__content__items {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  padding-top: 80px;
+  padding-top: 60px;
 }
 .movies__content__items__item {
-  padding: 20px;
+  background-color: black;
+  border: solid;
+  border-radius: 15px;
+  margin: 20px;
+  padding-top: 12px;
 }
 .movies__content__items__item h3 {
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding: 24px 0;
 }
 .movies__content__items__item p {
-  padding-bottom: 32px;
+  padding: 0 22px 24px;
 }
 .movies__content__items__item img {
-  height: 50%;
-  width: 80%;
+  border-radius: 15px;
+  height: 180px;
+  width: 160px;
+}
+
+.watch {
+  background-color: #000;
+  width: 100%;
+  height: 976px;
+  padding: 40px;
+}
+.watch__content {
+  padding-top: 90px;
+  text-align: center;
+}
+.watch__content h1 {
+  color: #83000b;
+  font-size: 58px;
+}
+.watch__content p {
+  padding: 90px 180px 50px;
+  text-align: center;
+}
+.watch__content__items {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.watch__content__items__item {
+  display: block;
+  padding-left: 30px;
+}
+.watch__content__items__item img {
+  width: 120px;
+  height: 120px;
+}
+
+.button-watch {
+  display: flex;
+  justify-content: center;
+  padding: 16px 32px;
+  font-size: 28px;
+  border-radius: 15px;
+}
+.button-watch a {
+  text-decoration: none;
+}
+
+.button-hero {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
+  font-size: 28px;
+  border-radius: 15px;
+}
+.button-hero a {
+  text-decoration: none;
 }
 
 * {

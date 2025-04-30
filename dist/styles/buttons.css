@@ -1,0 +1,21 @@
+.button-watch {
+  display: flex;
+  justify-content: center;
+  padding: 16px 32px;
+  font-size: 28px;
+  border-radius: 15px;
+}
+.button-watch a {
+  text-decoration: none;
+}
+
+.button-hero {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
+  font-size: 28px;
+  border-radius: 15px;
+}
+.button-hero a {
+  text-decoration: none;
+}

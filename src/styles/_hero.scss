@@ -1,7 +1,7 @@
 @use "variaveis";
 
 .hero {
-    background-image: url(../images/hero_sobre_desktop.png);
+    background-image: url(../images/heros/hero_sobre_desktop.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -10,11 +10,19 @@
 
     &__content {
         color: variaveis.$corTextoPrincipal;
-        padding-top: 30vh;
+        padding-top: 25vh;
         max-width: 800px;
         width: 100%;
         text-align: center;
         padding-left: 75px;
-        max-height: 60vh; 
+        max-height: 60vh;
+
+        h1 {
+            margin-bottom: 38px;
         }
+
+        p {
+            margin-bottom: 48px;
+        }
+    }
 }
