@@ -5,6 +5,8 @@
 @use "watch";
 @use "buttons";
 @use "trailers";
+@use "cast";
+@use "faq";
 
 * {
     margin: 0;
@@ -37,4 +39,3 @@ body {
     color: variaveis.$corTextoPrincipal;
     font-size: 18px;
 }
-

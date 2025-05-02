@@ -105,10 +105,10 @@
   background-color: #000;
   width: 100%;
   height: auto;
-  padding: 0 40px;
+  padding: 60px;
 }
 .watch__content {
-  padding: 120px 0;
+  padding: 80px 0;
   text-align: center;
 }
 .watch__content h1 {
@@ -116,7 +116,7 @@
   font-size: 58px;
 }
 .watch__content p {
-  padding: 60px 180px 50px;
+  padding: 60px 120px 50px;
   text-align: center;
 }
 .watch__content__items {
@@ -166,7 +166,7 @@
 .trailers {
   width: 100%;
   height: auto;
-  padding: 50px 40px;
+  padding: 60px;
 }
 .trailers__content {
   text-align: center;
@@ -182,7 +182,6 @@
 }
 .trailers__list {
   display: none;
-  padding-bottom: 20px;
   list-style: none;
 }
 .trailers__list--is-active {
@@ -199,7 +198,7 @@
   left: 0;
   width: 100%;
   height: 90%;
-  background-image: url("https://www.dailymotion.com/thumbnail/video/x2ku8u4");
+  background-color: black;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -220,6 +219,79 @@
 }
 .trailers .trailer__play-btn:hover {
   background-color: #fff;
+}
+
+.cast {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 60px;
+}
+.cast h1 {
+  padding-bottom: 30px;
+}
+.cast__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 30px;
+}
+.cast__list__actor {
+  padding: 32px;
+}
+.cast__list__actor h3 {
+  margin-top: 12px;
+}
+.cast__list__actor img {
+  border-radius: 15px;
+  width: 100%;
+  height: 320px;
+}
+
+.faq {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 60px;
+}
+.faq__questions {
+  margin-top: 38px;
+  list-style: none;
+  text-align: left;
+}
+.faq__questions__item {
+  background-color: black;
+  margin-bottom: 16px;
+}
+.faq__questions__item__question {
+  padding: 24px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+.faq__questions__item__question::after {
+  content: "+";
+  position: absolute;
+  top: 0;
+  right: 24px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+}
+.faq__questions__item__answer {
+  height: 0px;
+  overflow: hidden;
+  padding: 0 24px;
+  transition: height, 0.5s ease;
+}
+.faq__questions__item--is-open .faq__questions__item__question::after {
+  content: "-";
+}
+.faq__questions__item--is-open .faq__questions__item__answer {
+  height: auto;
+  padding-bottom: 24px;
+  transition: height, 0.5s ease;
 }
 
 * {
