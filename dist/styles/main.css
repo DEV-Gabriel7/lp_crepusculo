@@ -11,6 +11,12 @@
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 1023px) {
+  .header__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 .header__links {
   display: flex;
   justify-content: space-between;
@@ -47,6 +53,11 @@
   width: 100%;
   height: 90vh;
 }
+@media (max-width: 767px) {
+  .hero {
+    background-image: url(../images/heros/hero_sobre_celular.png);
+  }
+}
 .hero__content {
   padding-top: 25vh;
   max-width: 800px;
@@ -55,15 +66,31 @@
   padding-left: 75px;
   max-height: 60vh;
 }
+@media (max-width: 767px) {
+  .hero__content {
+    padding: 52vh 65px;
+  }
+}
 .hero__content h1 {
   color: #D4AF37;
   font-size: 3rem;
   margin-bottom: 38px;
 }
+@media (max-width: 767px) {
+  .hero__content h1 {
+    font-size: 2.25rem;
+    margin-bottom: 22px;
+  }
+}
 .hero__content p {
   color: #CCCCCC;
   font-size: 1.5rem;
   margin-bottom: 48px;
+}
+@media (max-width: 767px) {
+  .hero__content p {
+    margin-bottom: 28px;
+  }
 }
 
 .movies {
@@ -90,6 +117,11 @@
   grid-template-columns: repeat(5, 1fr);
   padding-top: 60px;
 }
+@media (max-width: 1023px) {
+  .movies__content__items {
+    display: inline-block;
+  }
+}
 .movies__content__items__item {
   border: solid transparent;
   background-color: #0D0D0D;
@@ -110,6 +142,11 @@
   font-size: 1.5rem;
   padding: 0 22px 24px;
 }
+@media (max-width: 1023px) {
+  .movies__content__items__item p {
+    font-size: 1rem;
+  }
+}
 .movies__content__items__item img {
   border-radius: 15px;
   height: 180px;
@@ -125,6 +162,11 @@
 .watch__content {
   padding: 80px 0;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .watch__content {
+    padding: 0;
+  }
 }
 .watch__content h1 {
   font-size: 3rem;
@@ -153,10 +195,15 @@
   display: flex;
   justify-content: center;
   padding: 16px 32px;
-  font-size: 28px;
+  font-size: 1.5rem;
   border-radius: 15px;
   background-color: #7A1F1F;
   border: none;
+}
+@media (max-width: 767px) {
+  .button-watch {
+    font-size: 1rem;
+  }
 }
 .button-watch:hover {
   background-color: #D4AF37;
@@ -174,19 +221,21 @@
   display: block;
   margin: 0 auto;
   padding: 16px 32px;
-  font-size: 28px;
+  font-size: 1.5rem;
   border: none;
   border-radius: 15px;
 }
-.button-hero:hover {
-  background-color: #D4AF37;
-}
-.button-hero:hover a {
-  color: #0D0D0D;
+@media (max-width: 767px) {
+  .button-hero {
+    padding: 8px 16px;
+  }
 }
 .button-hero a {
   color: #F5F5F5;
   text-decoration: none;
+}
+.button-hero:hover {
+  background-color: #D4AF37;
 }
 
 .button-trailers {
@@ -301,6 +350,11 @@
   width: 100%;
   height: 320px;
 }
+@media (max-width: 1023px) {
+  .cast__list__actor img {
+    height: 260px;
+  }
+}
 
 .faq {
   background-color: #0D0D0D;
@@ -377,8 +431,20 @@ footer h3 {
   font-size: 1.5rem;
   padding-top: 32px;
 }
+@media (max-width: 1023px) {
+  footer h3 {
+    font-size: 1rem;
+    padding-top: 24px;
+  }
+}
 footer p {
   font-size: 1.5rem;
   padding-top: 14px;
   padding-bottom: 32px;
+}
+@media (max-width: 1023px) {
+  footer p {
+    font-size: 1rem;
+    padding-bottom: 24px;
+  }
 }

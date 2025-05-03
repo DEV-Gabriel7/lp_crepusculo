@@ -22,14 +22,26 @@ footer {
     background-color: variaveis.$bgSecondary;
     color: variaveis.$textSecondary;
 
+    
+
     h3{
         font-size: variaveis.$textBig;
         padding-top: 32px;
+
+        @media (max-width:1023px) {
+            font-size: variaveis.$text;
+            padding-top: 24px;
+        }
     }
 
     p {
         font-size: variaveis.$textBig;
         padding-top: 14px;
         padding-bottom: 32px;
+
+        @media (max-width:1023px) {
+            font-size: variaveis.$text;
+            padding-bottom: 24px;
+        }
     }
 }

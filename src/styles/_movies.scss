@@ -15,7 +15,7 @@
             padding-bottom: 48px;
         }
 
-        & > p {
+        &>p {
             color: variaveis.$textSecondary;
             font-size: variaveis.$textBig;
             padding: 0 100px;
@@ -27,13 +27,17 @@
             grid-template-columns: repeat(5, 1fr);
             padding-top: 60px;
 
+            @media (max-width:1023px) {
+                display: inline-block;
+            }
+
             &__item {
                 border: solid transparent;
                 background-color: variaveis.$bgPrimary;
                 border-radius: 15px;
                 margin: 20px;
                 padding-top: 12px;
-                
+
                 &:hover {
                     border-color: variaveis.$colorTitles;
                 }
@@ -48,7 +52,12 @@
                     color: variaveis.$textSecondary;
                     font-size: variaveis.$textBig;
                     padding: 0 22px 24px;
+                    
+                    @media (max-width:1023px) {
+                        font-size: variaveis.$text;
+                    }
                 }
+                
 
                 img {
                     border-radius: 15px;

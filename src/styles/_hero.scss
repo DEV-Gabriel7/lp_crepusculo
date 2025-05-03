@@ -8,6 +8,10 @@
     width: 100%;
     height: 90vh;
 
+    @media (max-width:767px) {
+        background-image: url(../images/heros/hero_sobre_celular.png);
+    }
+
     &__content {
         padding-top: 25vh;
         max-width: 800px;
@@ -16,16 +20,30 @@
         padding-left: 75px;
         max-height: 60vh;
 
+        @media (max-width:767px) {
+            padding: 52vh 65px;
+        }
+
         h1 {
             color: variaveis.$colorTitles;
             font-size: variaveis.$title;
             margin-bottom: 38px;
+
+            @media (max-width:767px) {
+                
+                font-size: variaveis.$subtitle;
+                margin-bottom: 22px;
+            }
         }
 
         p {
             color: variaveis.$textSecondary;
             font-size: variaveis.$textBig;
             margin-bottom: 48px;
+
+            @media (max-width:767px) {
+                margin-bottom: 28px;
+            }
         }
     }
 }

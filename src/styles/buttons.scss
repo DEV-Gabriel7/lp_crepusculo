@@ -4,10 +4,14 @@
     display: flex;
     justify-content: center;
     padding: 16px 32px;
-    font-size: 28px;
+    font-size: variaveis.$textBig;
     border-radius: 15px;
     background-color: variaveis.$colorBtn;
     border: none;
+
+    @media (max-width:767px) {
+        font-size: variaveis.$text;
+    }
 
     &:hover {
         background-color: variaveis.$colorTitles;
@@ -28,22 +32,24 @@
     display: block;
     margin: 0 auto;
     padding: 16px 32px;
-    font-size: 28px;
+    font-size: variaveis.$textBig;
     border: none;
     border-radius: 15px;
 
-    &:hover {
-        background-color: variaveis.$colorTitles;
-
-        a {
-            color: variaveis.$bgPrimary;
-        }
+    @media (max-width:767px) {
+        padding: 8px 16px;
     }
 
     a {
         color: variaveis.$textPrimary;
         text-decoration: none;
     }
+
+    &:hover {
+        background-color: variaveis.$colorTitles;
+    }
+
+    
 }
 
 .button-trailers {
