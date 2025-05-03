@@ -11,6 +11,7 @@
 
     @media (max-width:767px) {
         font-size: variaveis.$text;
+        width: 100%;
     }
 
     &:hover {
@@ -37,12 +38,16 @@
     border-radius: 15px;
 
     @media (max-width:767px) {
-        padding: 8px 16px;
+        padding: 6px 12px;
     }
 
     a {
         color: variaveis.$textPrimary;
         text-decoration: none;
+
+        @media (max-width: 767px) {
+            font-size: variaveis.$textSmall;
+        }
     }
 
     &:hover {
@@ -53,9 +58,14 @@
 }
 
 .button-trailers {
-    font-size: 22px;
+    font-size: variaveis.$textBig;
     margin: 0 auto;
     padding: 16px 32px;
     background: transparent;
     border: none;
+
+    @media (max-width: 767px) {
+        font-size: variaveis.$textSmall;
+        display: block;
+    }
 }

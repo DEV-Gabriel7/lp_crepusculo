@@ -30,7 +30,6 @@
             margin-bottom: 38px;
 
             @media (max-width:767px) {
-                
                 font-size: variaveis.$subtitle;
                 margin-bottom: 22px;
             }
@@ -42,6 +41,7 @@
             margin-bottom: 48px;
 
             @media (max-width:767px) {
+                font-size: variaveis.$textSmall;
                 margin-bottom: 28px;
             }
         }

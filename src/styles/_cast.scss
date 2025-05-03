@@ -7,12 +7,19 @@
     text-align: center;
     padding: 60px;
 
+    @media(max-width: 767px) {
+        padding: 30px;
+    }
     
 
-    h1{
+    h1 {
         padding-bottom: 30px;
         color: variaveis.$colorTitles;
         font-size: variaveis.$title;
+
+        @media(max-width: 767px) {
+            font-size: variaveis.$subtitle;
+        }
     }
 
     &__list {
@@ -20,8 +27,17 @@
         grid-template-columns: repeat(4, 1fr);
         padding: 0 30px;
 
+        @media(max-width: 767px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
         &__actor {
             padding: 32px;
+
+            @media (max-width: 767px) {
+                padding: 8px;
+            }
 
             h3 {
                 color: variaveis.$textPrimary;
@@ -40,7 +56,7 @@
                 height: 320px;
 
                 @media (max-width:1023px) {
-                    height: 260px;
+                    height: 220px;
                 }
             }
         }

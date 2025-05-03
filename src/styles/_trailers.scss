@@ -6,23 +6,38 @@
     padding: 60px;
     background-color: variaveis.$bgPrimary;
 
+    @media (max-width: 767px) {
+        padding: 30px;
+        
+    }
+
     &__content {
         text-align: center;
         
         h1{
             font-size: variaveis.$title;
             color: variaveis.$colorTitles;
+
+            @media (max-width: 767px) {
+                font-size: variaveis.$subtitle;
+            }
         }
         
         p {
             font-size: variaveis.$textBig;
             color: variaveis.$textPrimary;
             padding: 20px 50px;
+
+            @media (max-width: 767px) {
+                font-size: variaveis.$text;
+            }
         }
     }
 
     &__tabs {
         padding-bottom: 30px;
+
+        
 
         &__button {
             background-color: variaveis.$bgSecondary;
@@ -30,6 +45,10 @@
             &--is-active {
                 background-color: variaveis.$colorBtn;
                 border-bottom: solid variaveis.$textPrimary;
+            }
+
+            @media(max-width:767px) {
+                margin-bottom: 8px;
             }
         }
     }
