@@ -6,19 +6,42 @@
     padding: 16px 32px;
     font-size: 28px;
     border-radius: 15px;
+    background-color: variaveis.$colorBtn;
+    border: none;
+
+    &:hover {
+        background-color: variaveis.$colorTitles;
+        
+        a {
+            color: variaveis.$bgPrimary;
+        }
+    }
 
     a {
+        color: variaveis.$textPrimary;
         text-decoration: none;
     }
 }
 
 .button-hero {
+    background-color: variaveis.$colorBtn;
     display: block;
     margin: 0 auto;
     padding: 16px 32px;
     font-size: 28px;
+    border: none;
     border-radius: 15px;
+
+    &:hover {
+        background-color: variaveis.$colorTitles;
+
+        a {
+            color: variaveis.$bgPrimary;
+        }
+    }
+
     a {
+        color: variaveis.$textPrimary;
         text-decoration: none;
     }
 }
@@ -27,7 +50,6 @@
     font-size: 22px;
     margin: 0 auto;
     padding: 16px 32px;
-    color: variaveis.$corTextoPrincipal;
     background: transparent;
     border: none;
 }

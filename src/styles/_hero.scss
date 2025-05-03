@@ -9,7 +9,6 @@
     height: 90vh;
 
     &__content {
-        color: variaveis.$corTextoPrincipal;
         padding-top: 25vh;
         max-width: 800px;
         width: 100%;
@@ -18,10 +17,14 @@
         max-height: 60vh;
 
         h1 {
+            color: variaveis.$colorTitles;
+            font-size: variaveis.$title;
             margin-bottom: 38px;
         }
 
         p {
+            color: variaveis.$textSecondary;
+            font-size: variaveis.$textBig;
             margin-bottom: 48px;
         }
     }

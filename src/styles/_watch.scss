@@ -1,7 +1,7 @@
 @use "variaveis";
 
 .watch {
-    background-color: #000;
+    background-color: variaveis.$bgPrimary;
     width: 100%;
     height: auto;
     padding: 60px;
@@ -13,12 +13,14 @@
         text-align: center;
         
         h1 {
-            color: variaveis.$corTitulos;
-            font-size: 58px;
+            font-size: variaveis.$title;
+            color: variaveis.$colorTitles;
         }
 
         
         p {
+            color: variaveis.$textSecondary;
+            font-size: variaveis.$textBig;
             padding: 60px 120px 50px;
             text-align: center;
         }
@@ -31,7 +33,6 @@
             &__item {
                 display: block;
                 padding: 30px;
-                
 
                 img {
                     

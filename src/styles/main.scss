@@ -15,27 +15,21 @@
     font-family: "Cormorant Garamond", sans-serif;
 }
 
-body {
-    background-color: variaveis.$bgColor;
-}
+footer {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    background-color: variaveis.$bgSecondary;
+    color: variaveis.$textSecondary;
 
-.title {
-    color: variaveis.$corTitulos;
-    font-size: 44px;
-}
+    h3{
+        font-size: variaveis.$textBig;
+        padding-top: 32px;
+    }
 
-.title--small {
-    color: variaveis.$corTitulos;
-    font-size: 24px;
-}
-
-.text {
-    color: variaveis.$corTextoPrincipal;
-    font-size: 28px;
-    letter-spacing: 2px;
-}
-
-.text--small {
-    color: variaveis.$corTextoPrincipal;
-    font-size: 18px;
+    p {
+        font-size: variaveis.$textBig;
+        padding-top: 14px;
+        padding-bottom: 32px;
+    }
 }

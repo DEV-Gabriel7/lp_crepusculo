@@ -1,4 +1,7 @@
+@use "variaveis";
+
 .movies {
+    background-color: variaveis.$bgSecondary;
     width: 100%;
     min-height: 976px;
 
@@ -7,10 +10,14 @@
         padding: 60px;
 
         h1 {
+            color: variaveis.$colorTitles;
+            font-size: variaveis.$subtitle;
             padding-bottom: 48px;
         }
 
         & > p {
+            color: variaveis.$textSecondary;
+            font-size: variaveis.$textBig;
             padding: 0 100px;
         }
 
@@ -21,19 +28,26 @@
             padding-top: 60px;
 
             &__item {
-                background-color: black;
-                border: solid;
+                border: solid transparent;
+                background-color: variaveis.$bgPrimary;
                 border-radius: 15px;
                 margin: 20px;
                 padding-top: 12px;
+                
+                &:hover {
+                    border-color: variaveis.$colorTitles;
+                }
 
                 h3 {
+                    color: variaveis.$colorTitles;
+                    font-size: variaveis.$textBig;
                     padding: 24px 0;
                 }
 
                 p {
+                    color: variaveis.$textSecondary;
+                    font-size: variaveis.$textBig;
                     padding: 0 22px 24px;
-
                 }
 
                 img {

@@ -1,5 +1,7 @@
+@use "variaveis";
+
 .cast {
-    background-color: black;
+    background-color: variaveis.$bgSecondary;
     width: 100%;
     height: auto;
     text-align: center;
@@ -7,6 +9,8 @@
 
     h1{
         padding-bottom: 30px;
+        color: variaveis.$colorTitles;
+        font-size: variaveis.$title;
     }
 
     &__list {
@@ -18,7 +22,14 @@
             padding: 32px;
 
             h3 {
+                color: variaveis.$textPrimary;
+                font-size: variaveis.$textBig;
                 margin-top: 12px;
+            }
+
+            p {
+                color: variaveis.$textSecondary;
+                font-size: variaveis.$text;
             }
 
             img {

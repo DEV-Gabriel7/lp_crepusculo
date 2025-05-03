@@ -1,7 +1,7 @@
 @use "variaveis";
 
 .header {
-    background-color: variaveis.$bgHeaderFooter;
+    background-color: variaveis.$bgPrimary;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -26,13 +26,13 @@
             list-style: none;
             
             :hover {
-                color: variaveis.$corTitulos;
+                color: variaveis.$colorTitles;
             }
 
             a {
-                color: variaveis.$corTextoPrincipal;
-                font-size: 28px;
+                font-size: variaveis.$text;
                 font-weight: bold;
+                color: variaveis.$textPrimary;
                 text-decoration: none;
             }
         }

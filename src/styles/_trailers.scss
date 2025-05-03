@@ -4,12 +4,19 @@
     width: 100%;
     height: auto;
     padding: 60px;
+    background-color: variaveis.$bgPrimary;
 
     &__content {
         text-align: center;
-
-
+        
+        h1{
+            font-size: variaveis.$title;
+            color: variaveis.$colorTitles;
+        }
+        
         p {
+            font-size: variaveis.$textBig;
+            color: variaveis.$textPrimary;
             padding: 20px 50px;
         }
     }
@@ -18,8 +25,11 @@
         padding-bottom: 30px;
 
         &__button {
+            background-color: variaveis.$bgSecondary;
+            color: variaveis.$textPrimary;
             &--is-active {
-                border-bottom: solid variaveis.$corTextoPrincipal;
+                background-color: variaveis.$colorBtn;
+                border-bottom: solid variaveis.$textPrimary;
             }
         }
     }
@@ -58,14 +68,14 @@
             font-size: 36px;
             padding: 20px;
             border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.85);
+            color: variaveis.$colorTitles;
             border: none;
             cursor: pointer;
-            color: variaveis.$corTextoPrincipal;
+            color: variaveis.$colorTitles;
             transition: background-color 0.3s;
 
             &:hover {
-                background-color: #fff;
+                background-color: variaveis.$textPrimary;
             }
         }
     }

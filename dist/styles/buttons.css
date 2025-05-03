@@ -4,19 +4,37 @@
   padding: 16px 32px;
   font-size: 28px;
   border-radius: 15px;
+  background-color: #7A1F1F;
+  border: none;
+}
+.button-watch:hover {
+  background-color: #D4AF37;
+}
+.button-watch:hover a {
+  color: #0D0D0D;
 }
 .button-watch a {
+  color: #F5F5F5;
   text-decoration: none;
 }
 
 .button-hero {
+  background-color: #7A1F1F;
   display: block;
   margin: 0 auto;
   padding: 16px 32px;
   font-size: 28px;
+  border: none;
   border-radius: 15px;
 }
+.button-hero:hover {
+  background-color: #D4AF37;
+}
+.button-hero:hover a {
+  color: #0D0D0D;
+}
 .button-hero a {
+  color: #F5F5F5;
   text-decoration: none;
 }
 
@@ -24,7 +42,6 @@
   font-size: 22px;
   margin: 0 auto;
   padding: 16px 32px;
-  color: #f8f8f8;
   background: transparent;
   border: none;
 }
